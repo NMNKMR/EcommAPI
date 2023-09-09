@@ -63,7 +63,7 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 
 - **Example GET Request**: `/categories/cat1/products`
 - **Response**: 200 OK:- Successful request.
-![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/b7243749-0410-4ef8-9845-3e3269660cd4)
+![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/3e0e9b28-79d1-46a9-9bcf-d6ef46d22acf)
 
 [Full Documentation](#)
 
@@ -86,13 +86,13 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 - **Description**: View the items in the user's shopping cart.
 
 - **Response**: 200 OK:- Successful request.
-                1. Cart is Empty:
-                ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/c5f5fe73-f634-4e35-a874-3a4a55d086af)
+- 1. Cart is Empty:
+![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/c5f5fe73-f634-4e35-a874-3a4a55d086af)
 
-                2. Cart Items:
-                ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/7443fa88-b59c-4f7a-ba95-98ae6277baed)
+- 2. Cart Items:
+![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/7443fa88-b59c-4f7a-ba95-98ae6277baed)
 
-                400 Bad Request: {"error": "user cart not found"}
+400 Bad Request: {"error": "user cart not found"}
                 
 - **Endpoint**: `/cart/add/:productId`
 - **Method**: POST
@@ -181,9 +181,10 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 Token Received
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/db170c4e-3d3f-488b-9026-de066ab96960)
 
-                401 Unauthorized:-
+401 Unauthorized:-
 1. User Not Found
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/5ed01552-c9ce-4397-97d4-7a433749fa45)
+
 2. Wrong Password
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/09bc3b4c-6897-454d-820c-498d06afc748)
 
