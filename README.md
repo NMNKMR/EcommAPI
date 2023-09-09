@@ -51,7 +51,8 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 - **Description**: Retrieve a list of product categories.
 
 - **Response**: 200 OK:- Successful request.
-- ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/c28ec0cd-757c-45b2-b1be-bdadb51243e4)
+  
+- ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/3e0e9b28-79d1-46a9-9bcf-d6ef46d22acf)
 
 [Full Documentation](#)
 
@@ -63,7 +64,8 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 
 - **Example GET Request**: `/categories/cat1/products`
 - **Response**: 200 OK:- Successful request.
-![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/3e0e9b28-79d1-46a9-9bcf-d6ef46d22acf)
+
+![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/56c8e3e4-4d71-4adf-8d77-cfde65733d5b)
 
 [Full Documentation](#)
 
@@ -87,9 +89,11 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 
 - **Response**: 200 OK:- Successful request.
 - 1. Cart is Empty:
+     
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/c5f5fe73-f634-4e35-a874-3a4a55d086af)
 
 - 2. Cart Items:
+     
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/7443fa88-b59c-4f7a-ba95-98ae6277baed)
 
 400 Bad Request: {"error": "user cart not found"}
@@ -99,7 +103,8 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 - **Description**: Add products to the user's shopping cart.
 
 - **Example POST Request**: `/cart/add/prod1`
-- **Response**: 200 OK:- Successful request. 
+- **Response**: 200 OK:- Successful request.
+  
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/9c8b5de1-d1ae-49e8-a4c1-80d3129fb629)
 
 - **Endpoint**: `/cart/update/:productId`
@@ -107,7 +112,8 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 - **Description**: Update the quantity of a product in the user's cart.
 
 - **Example PUT Request**: `/cart/update/prod1?update=increase` or `/cart/update/prod1?update=decrease`
-- **Response**: 200 OK:- Successful request. 
+- **Response**: 200 OK:- Successful request.
+  
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/b97c54fc-4898-4e4f-b3d6-77a89f509284)
 
 - **Endpoint**: `/cart/remove/:productId`
@@ -115,7 +121,8 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 - **Description**: Remove a product from the user's cart.
 
 - **Example DELETE Request**: `/cart/remove/prod1`
-- **Response**: 200 OK:- Successful request. 
+- **Response**: 200 OK:- Successful request.
+  
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/89a80d20-2c62-4f84-b9de-1a8dd363e7bb)
 
 [Full Documentation](#)
@@ -128,9 +135,11 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 
 - **Example POST Request**: `/orders/place`
 - **Request Body**:
+  
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/f0184dc3-13ff-478b-8f8a-aadef0392274)
 
-- **Response**: 200 OK:- Successful request. 
+- **Response**: 200 OK:- Successful request.
+  
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/91505d05-70cc-4dcd-95f0-d2cd51195963)
 
 [Full Documentation](#)
@@ -141,8 +150,10 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 - **Method**: GET
 - **Description**: Retrieve the order history for authenticated auth.
 
-- **Response**: 200 OK:- Successful request. 
+- **Response**: 200 OK:- Successful request.
+  
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/f9236892-9a09-4e6b-8d0a-bc9e8479827a)
+
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/90fa6b06-2409-420a-9773-1e3a4d7ca649)
 
 [Full Documentation](#)
@@ -154,7 +165,8 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 - **Description**: Retrieve detailed information about a specific order by its ID.
 
 - **Example GET Request**: `/orders/64fc6d1f73ef02f78822fdda`
-- **Response**: 200 OK:- Successful request. 
+- **Response**: 200 OK:- Successful request.
+  
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/da919920-db9f-43e8-ac2b-b9475dadfc99)
 
 [Full Documentation](#)
@@ -165,9 +177,11 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 - **Method**: POST
 - **Description**: Register a new user account.
 - **Request Body**:
+  
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/a2736143-b681-4146-9ca5-691d3d305e60)
 
 - **Response**: 200 OK:- Successful request.
+
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/feaaec16-7492-455f-a7c5-ab19207bed77)
 
 - **Endpoint**: `/auth/login`
@@ -175,17 +189,21 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 - **Description**: Log in and obtain a JWT token for API authentication.
 
 - **Request Body**:
+  
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/a2736143-b681-4146-9ca5-691d3d305e60)
 
 - **Response**: 200 OK:- Successful request. 
 Token Received
+
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/db170c4e-3d3f-488b-9026-de066ab96960)
 
 401 Unauthorized:-
 1. User Not Found
+   
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/5ed01552-c9ce-4397-97d4-7a433749fa45)
 
-2. Wrong Password
+3. Wrong Password
+   
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/09bc3b4c-6897-454d-820c-498d06afc748)
 
 
