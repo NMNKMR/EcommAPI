@@ -94,7 +94,7 @@ The API returns meaningful error messages and standard HTTP status codes to indi
 
 - 2. Cart Items:
      
-![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/7443fa88-b59c-4f7a-ba95-98ae6277baed)
+![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/49ffdd24-710e-4f16-bc62-597c903ae3c5)
 
 400 Bad Request: {"error": "user cart not found"}
                 
@@ -154,7 +154,7 @@ The API returns meaningful error messages and standard HTTP status codes to indi
   
 ![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/f9236892-9a09-4e6b-8d0a-bc9e8479827a)
 
-![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/90fa6b06-2409-420a-9773-1e3a4d7ca649)
+![image](https://github.com/NMNKMR/EcommAPI/assets/89262829/5ea15ebc-ac9c-4efe-8c12-d34196f52b74)
 
 [Full Documentation](#)
 
